@@ -136,3 +136,5 @@ if os.path.exists(f):
 f = os.path.join(BASE_DIR, "conf", "settings", "production.py")
 if os.path.exists(f):
     exec(open(f, "rb").read())
+
+from celery_settings import *
